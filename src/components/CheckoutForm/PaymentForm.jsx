@@ -23,7 +23,7 @@ const PaymentForm = ({ checkoutToken, nextStep, backStep, shippingData, onCaptur
       const orderData = {
         line_items: checkoutToken.live.line_items,
         customer: { firstname: shippingData.firstName, lastname: shippingData.lastName, email: shippingData.email },
-        extra_fields: {extr_DWy4oGj6vw6Jx2: shippingData.tel},
+        extra_fields: {extr_DWy4oGj6vw6Jx2: shippingData.tel, extr_Kvg9l61nv51bB7:shippingData.defektbeschreibung, extr_kpnNwA1mxwmXB3:shippingData.adresszusatz, extr_NqKE50NnNwdgBL:shippingData.firma, extr_8XO3wpMJ7oYAzQ: shippingData.entsperrmuster },
         shipping: { name: 'International', street: shippingData.address1, town_city: shippingData.city, county_state: shippingData.shippingSubdivision, postal_zip_code: shippingData.zip, country: shippingData.shippingCountry },
         fulfillment: { shipping_method: shippingData.shippingOption },
         payment: {
