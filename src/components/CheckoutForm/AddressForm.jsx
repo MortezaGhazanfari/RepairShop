@@ -60,6 +60,7 @@ const AddressForm = ({ checkoutToken, test }) => {
             <FormInput required name="email" label="Email" />
             <FormInput required name="city" label="Ort" />
             <FormInput required name="zip" label="PLZ" />
+            <FormInput required name="tel" label="tel" />
             <Grid item xs={12} sm={6}>
               <InputLabel>Land</InputLabel>
               <Select value={shippingCountry} fullWidth onChange={(e) => setShippingCountry(e.target.value)}>
