@@ -14,7 +14,7 @@ const Iphone = ({ iphone }) => {
   const slug = iphone.slug;
   const navigate = useNavigate();
   const handleGoToProducts = () => {
-      const path = '../';
+      const path = '../products';
       navigate(path, { state: { slug } } )
   }
 
