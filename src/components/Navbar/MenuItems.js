@@ -1,22 +1,22 @@
 export const MenuItems = [
     {
-      title: 'Notbook',
-      path: '/marketing',
+      title: 'Notebook',
+      path: '/notbook',
       cName: 'dropdown-link'
     },
     {
       title: 'Tablet',
-      path: '/consulting',
+      path: '/tablet',
       cName: 'dropdown-link'
     },
     {
       title: 'Smartwatch',
-      path: '/design',
+      path: '/smartwatch',
       cName: 'dropdown-link'
     },
     {
       title: 'Smartphone',
-      path: '/development',
+      path: '/smartphone',
       cName: 'dropdown-link'
     }
   ];
