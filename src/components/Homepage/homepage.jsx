@@ -1,7 +1,12 @@
 import React from 'react';
 import AllDevices from '../Devices/AllDevices';
+import FirstPageView from '../FirstPageView/FirstPageView';
+import Progress from '../Progress/Progress';
+import About from '../Abaut/Abaut';
+import Faq from '../Faq/Faq';
 import Grid from '@material-ui/core/Grid';
 import useStyles from './styles';
+import Contact from '../Contact/Contact';
 
 
 function Homepage () {
@@ -11,13 +16,14 @@ function Homepage () {
   return (
     <main className={classes.content}>
       <div className={classes.toolbar} />
-        <h1>Home</h1>
+      <div>
+        <FirstPageView />
         <AllDevices />
-        <h1>Ablauf</h1>
-        <h1>Über uns</h1>
-        <h1>FAQ</h1>
-        <h1>Kontakt</h1>
-
+        <Progress />
+        <About />
+        <Faq />
+        <Contact />
+        </div>
     </main>
   )
 }
