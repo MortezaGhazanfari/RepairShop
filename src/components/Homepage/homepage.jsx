@@ -7,6 +7,7 @@ import Faq from '../Faq/Faq';
 import Grid from '@material-ui/core/Grid';
 import useStyles from './styles';
 import Contact from '../Contact/Contact';
+import b1 from '../../assets/b1.jpg';
 
 
 function Homepage () {
@@ -14,9 +15,9 @@ function Homepage () {
 
     console.log("Home");
   return (
-    <main className={classes.content}>
+    <main className={classes.content} >
       <div className={classes.toolbar} />
-      <div>
+      <div >
         <FirstPageView />
         <AllDevices />
         <Progress />
